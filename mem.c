@@ -10,9 +10,10 @@ int main()
       if(ptr) {
           memset(ptr, 0xff, 1024*1024);
           i++;
+        printf("Current allocated: %uM\n", i);
       }
       else{
-          printf("Can't allocate memory! Current allocated: %uM\n", i);
+          printf("Can't allocate memory!\n");
           sleep(1);
       }
     }
