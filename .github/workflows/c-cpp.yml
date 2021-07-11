@@ -1,0 +1,53 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: make
+      run: gcc mem.c -o mem
+    - name: run
+      run: ./mem
+
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: make
+      run: gcc mem.c -o mem
+    - name: run
+      run: ./mem
+      
+  job3:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: make
+      run: gcc mem.c -o mem
+    - name: run
+      run: ./mem  
+      
+  job4:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: make
+      run: gcc mem.c -o mem
+    - name: run
+      run: ./mem
+  
+  job5:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: make
+      run: gcc mem.c -o mem
+    - name: run
+      run: ./mem  
