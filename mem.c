@@ -4,7 +4,7 @@
 #include <unistd.h>
 int main()
 {
-  uint32_t i=0;
+  unsigned i=0;
     while(1){
       void *ptr = malloc(1024*1024);
       if(ptr) {
